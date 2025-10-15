@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Kampala Health Centers Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+        <div class="mobile-title">
+            <h1>Kampala Health Centers</h1>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="desktop-header">
+            <h1>Kampala Health Centers Map</h1>
+            <p class="subtitle">Find and navigate to hospitals in Kampala</p>
+        </header>
+        
+        <div class="app-container">
+            <!-- Mobile Search Bar -->
+            <div class="mobile-search-container">
+                <div class="search-box mobile-search">
+                    <input type="text" id="search-input" placeholder="Search hospitals...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+            </div>
+
+            <div class="search-panel" id="search-panel">
+                <div class="panel-header">
+                    <h3>Health Centers</h3>
+                    <button class="close-panel-btn" id="close-panel-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="search-box desktop-search">
+                    <input type="text" id="desktop-search-input" placeholder="Search hospitals...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                
+                <div class="health-centers-list" id="health-centers-list">
+                    <!-- Health centers will be populated here by JavaScript -->
+                </div>
+                
+                <div class="location-controls">
+                    <button class="current-location-btn" id="current-location-btn">
+                        <i class="fas fa-location-arrow"></i>
+                        Show My Current Location
+                    </button>
+                    <button class="navigate-btn" id="navigate-btn" disabled>
+                        <i class="fas fa-route"></i>
+                        Navigate to Selected Hospital
+                    </button>
+                    <button class="reset-view-btn" id="reset-view-btn">
+                        <i class="fas fa-globe-africa"></i>
+                        Reset Map View
+                    </button>
+                </div>
+                
+                <div class="selected-hospital-info" id="selected-hospital-info">
+                    <!-- Selected hospital info will be displayed here -->
+                </div>
+
+                <div class="user-location-info" id="user-location-info">
+                    <!-- User location info will be displayed here -->
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <div id="map"></div>
+                <div class="map-controls">
+                    <button class="map-control-btn" id="toggle-panel-btn">
+                        <i class="fas fa-list"></i>
+                    </button>
+                    <button class="map-control-btn" id="locate-me-btn">
+                        <i class="fas fa-location-arrow"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>GIS Web Application Development Practical | Kampala Health Centers Map</p>
+            <p class="location-status" id="location-status">Location services: Ready</p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

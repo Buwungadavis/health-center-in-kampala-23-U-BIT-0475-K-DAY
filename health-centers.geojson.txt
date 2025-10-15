@@ -1,0 +1,70 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mulago National Referral Hospital",
+        "type": "Hospital",
+        "contact": "Phone: +256 414 532 000",
+        "description": "National referral hospital with specialized services"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.5825, 0.3476]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rubaga Hospital",
+        "type": "Hospital",
+        "contact": "Phone: +256 414 270 621",
+        "description": "Private hospital on Rubaga Hill"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.5506, 0.3028]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mengo Hospital",
+        "type": "Hospital",
+        "contact": "Phone: +256 414 274 893",
+        "description": "Private not-for-profit hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.5569, 0.2997]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nsambya Hospital",
+        "type": "Hospital",
+        "contact": "Phone: +256 414 510 221",
+        "description": "Private hospital with emergency services"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.6103, 0.2897]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kawempe General Hospital",
+        "type": "Hospital",
+        "contact": "Phone: +256 414 661 000",
+        "description": "Public hospital in Kawempe Division"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.5667, 0.3786]
+      }
+    }
+  ]
+}
